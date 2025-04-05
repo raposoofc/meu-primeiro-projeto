@@ -40,5 +40,3 @@ Criar um sistema simples para registrar, visualizar e gerenciar bens patrimoniai
 ### ✍️ Autor
 
 Feito por **Rodolpho Rapôso**  
-https://www.linkedin.com/rodolphosilvaraposo/
-
