@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>KDBENS - Sistema Patrimonial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h1>KDBENS - Sistema de Gerenciamento de Bens Patrimoniais</h1>
+    <input type="text" id="login" placeholder="Digite seu login">
+    <input type="password" id="senha" placeholder="Digite sua senha">
+    <button onclick="validarLogin()">Entrar</button>
+    <p id="mensagemLogin"></p>
+  </div>
+
+  <div id="menu" style="display:none;">
+    <h2>MENU PRINCIPAL</h2>
+    <button onclick="mostrarCadastro()">1 - Cadastrar</button>
+    <button onclick="mostrarConsulta()">2 - Consultar</button>
+    <button onclick="alert('Função de transferência não implementada.')">3 - Transferir</button>
+    <button onclick="encerrarSessao()">4 - Encerrar Sessão</button>
+  </div>
+
+  <div id="cadastro" style="display:none;">
+    <h3>Cadastro de Bem Patrimonial</h3>
+    <input placeholder="Nome" id="nome">
+    <input placeholder="Data de Aquisição" id="data">
+    <input placeholder="Valor" id="valor">
+    <input placeholder="Setor" id="setor">
+    <input placeholder="Responsável" id="responsavel">
+    <input placeholder="Casa" id="casa">
+    <button onclick="cadastrar()">Cadastrar</button>
+    <button onclick="voltarMenu()">Voltar ao Menu</button>
+  </div>
+
+  <div id="consulta" style="display:none;">
+    <h3>Consulta de Bens</h3>
+    <select id="tipoConsulta">
+      <option value="1">Por Nome</option>
+      <option value="2">Por IdBem</option>
+      <option value="3">Por Setor</option>
+      <option value="4">Por Casa</option>
+    </select>
+    <input id="termoBusca" placeholder="Digite o termo de busca">
+    <button onclick="consultar()">Buscar</button>
+    <button onclick="voltarMenu()">Voltar ao Menu</button>
+    <div id="resultadoConsulta"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
