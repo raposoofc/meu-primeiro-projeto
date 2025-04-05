@@ -16,7 +16,8 @@ Criar um sistema simples para registrar, visualizar e gerenciar bens patrimoniai
 
 ## 📸 Captura de Tela
 
-> ![Print da tela inicial do sistema](/Imagens/tela.png)
+> ![![tela](https://github.com/user-attachments/assets/89432216-6205-4680-bc99-2e6c0a36c395)
+)
 
 ## 🚀 Como executar
 
